@@ -31,15 +31,15 @@
 
 ### 3.1 Visualización del Espacio 3D
 
-**REQ-3D-001 [0%]:** El sistema debe renderizar tres planos perpendiculares (XY, XZ, YZ) con cuadrículas visibles.
+**REQ-3D-001 [100%]:** El sistema debe renderizar tres planos perpendiculares (XY, XZ, YZ) con cuadrículas visibles.
 
-**REQ-3D-002 [0%]:** Los planos deben ser semitransparentes para no obstruir la visualización de vectores.
+**REQ-3D-002 [100%]:** Los planos deben ser semitransparentes para no obstruir la visualización de vectores.
 
-**REQ-3D-003 [0%]:** El sistema debe mostrar ejes coordenados X, Y, Z etiquetados con convención de colores estándar (X=rojo, Y=verde, Z=azul).
+**REQ-3D-003 [100%]:** El sistema debe mostrar ejes coordenados X, Y, Z etiquetados con convención de colores estándar (X=rojo, Y=verde, Z=azul).
 
-**REQ-3D-004 [0%]:** Cada eje debe incluir marcadores numéricos en intervalos unitarios.
+**REQ-3D-004 [100%]:** Cada eje debe incluir marcadores numéricos en intervalos unitarios.
 
-**REQ-3D-005 [0%]:** La vista inicial debe ser una perspectiva isométrica centrada en el origen de coordenadas.
+**REQ-3D-005 [100%]:** La vista inicial debe ser una perspectiva isométrica centrada en el origen de coordenadas.
 
 ### 3.2 Sistema de Cámara
 
@@ -55,37 +55,37 @@
 
 ### 3.3 Gestión de Vectores
 
-**REQ-VEC-001 [0%]:** El usuario debe poder agregar vectores mediante entrada de texto con sintaxis flexible (ej: "v1: 1, 2, 3" o "[1, 2, 3]").
+**REQ-VEC-001 [100%]:** El usuario debe poder agregar vectores mediante entrada de texto con sintaxis flexible (ej: "v1: 1, 2, 3" o "[1, 2, 3]").
 
-**REQ-VEC-002 [0%]:** El sistema debe validar que las coordenadas ingresadas sean números válidos (no NaN ni Infinity).
+**REQ-VEC-002 [100%]:** El sistema debe validar que las coordenadas ingresadas sean números válidos (no NaN ni Infinity).
 
-**REQ-VEC-003 [0%]:** Cada vector debe tener un identificador único y un nombre visible.
+**REQ-VEC-003 [100%]:** Cada vector debe tener un identificador único y un nombre visible.
 
-**REQ-VEC-004 [0%]:** El sistema debe soportar hasta 20 vectores simultáneos sin degradación de rendimiento.
+**REQ-VEC-004 [100%]:** El sistema debe soportar hasta 20 vectores simultáneos sin degradación de rendimiento.
 
-**REQ-VEC-005 [0%]:** El usuario debe poder eliminar vectores individuales.
+**REQ-VEC-005 [100%]:** El usuario debe poder eliminar vectores individuales.
 
-**REQ-VEC-006 [0%]:** El usuario debe poder cambiar el color de cada vector.
+**REQ-VEC-006 [100%]:** El usuario debe poder cambiar el color de cada vector.
 
-**REQ-VEC-007 [0%]:** El usuario debe poder ocultar/mostrar vectores individuales sin eliminarlos.
+**REQ-VEC-007 [100%]:** El usuario debe poder ocultar/mostrar vectores individuales sin eliminarlos.
 
 ### 3.4 Representación Visual de Vectores
 
-**REQ-VISU-001 [0%]:** Los vectores deben renderizarse como flechas 3D con dirección y magnitud correctas.
+**REQ-VISU-001 [100%]:** Los vectores deben renderizarse como flechas 3D con dirección y magnitud correctas.
 
-**REQ-VISU-002 [0%]:** Cada vector debe mostrar un label con su nombre y coordenadas.
+**REQ-VISU-002 [100%]:** Cada vector debe mostrar un label con su nombre y coordenadas.
 
-**REQ-VISU-003 [0%]:** Los vectores deben originarse desde el origen de coordenadas (0, 0, 0).
+**REQ-VISU-003 [100%]:** Los vectores deben originarse desde el origen de coordenadas (0, 0, 0).
 
-**REQ-VISU-004 [0%]:** Cada vector debe tener un color personalizable asignado.
+**REQ-VISU-004 [100%]:** Cada vector debe tener un color personalizable asignado.
 
 ### 3.5 Interfaz de Usuario
 
-**REQ-UI-001 [0%]:** La aplicación debe tener un sidebar colapsable para controles e inputs.
+**REQ-UI-001 [100%]:** La aplicación debe tener un sidebar colapsable para controles e inputs.
 
-**REQ-UI-002 [0%]:** El sidebar debe incluir un campo de entrada de texto para agregar vectores.
+**REQ-UI-002 [100%]:** El sidebar debe incluir un campo de entrada de texto para agregar vectores.
 
-**REQ-UI-003 [0%]:** El sidebar debe mostrar una lista de todos los vectores actuales con opciones de edición.
+**REQ-UI-003 [100%]:** El sidebar debe mostrar una lista de todos los vectores actuales con opciones de edición.
 
 **REQ-UI-004 [100%]:** La interfaz debe usar un estilo visual light mode con fondo claro.
 
@@ -189,11 +189,11 @@ src/
 
 ### Para el MVP
 
-- [ ] El usuario puede agregar al menos 10 vectores mediante texto
+- [x] El usuario puede agregar al menos 10 vectores mediante texto
 - [ ] Todos los controles de cámara funcionan correctamente
-- [ ] Los planos coordenados se visualizan con claridad
-- [ ] Los vectores se renderizan como flechas 3D precisas
-- [ ] El sidebar es colapsable y muestra todos los controles
+- [x] Los planos coordenados se visualizan con claridad
+- [x] Los vectores se renderizan como flechas 3D precisas
+- [x] El sidebar es colapsable y muestra todos los controles
 - [ ] El export/import de JSON funciona sin pérdida de datos
 - [ ] No hay errores en consola durante uso normal
 - [ ] La aplicación está desplegada en GitHub Pages
