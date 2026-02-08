@@ -10,7 +10,7 @@ Para el tercer eje (balanceo o rotación sobre el eje óptico), se dispone de un
 Al presionar la barra espaciadora y arrastrar se ejecutará un movimiento de traslación sin cambio de perspectiva.
 
 ## Tecnologías
-
+---------------
 | Componente |	Tecnología |
 | Renderizado 3D | Three.js (vía React Three Fiber) |
 | Interfaz de Usuario | React + Tailwind CSS (para el layout) |
