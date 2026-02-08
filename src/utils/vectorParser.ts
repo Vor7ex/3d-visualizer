@@ -18,7 +18,7 @@ export const parseVectorString = (input: string): ParsedVector | null => {
   // Check if name is provided (colon separator)
   if (trimmed.includes(":")) {
     const parts = trimmed.split(":");
-    name = parts[0].trim();
+    name = (parts[0] || "").trim();
     coordsString = parts.slice(1).join(":").trim(); // In case name had colon? Unlikely but safe
   }
 

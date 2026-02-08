@@ -29,7 +29,8 @@ export const useVectorStore = create<VectorStore>((set) => ({
         ...vectorData,
         color:
           vectorData.color ||
-          DEFAULT_COLORS[state.vectors.length % DEFAULT_COLORS.length],
+          DEFAULT_COLORS[state.vectors.length % DEFAULT_COLORS.length] ||
+          "#ef4444",
         visible: vectorData.visible ?? true,
       };
 

@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import * as THREE from "three";
-import { Text } from "@react-three/drei";
+import { Text, Billboard } from "@react-three/drei";
 import { Vector3D } from "../../types/vector.types";
 
 interface VectorArrowProps {
@@ -36,16 +36,17 @@ export function VectorArrow({ vector }: VectorArrowProps) {
           headWidth,
         ]}
       />
-      <Text
-        position={[x, y + 0.5, z]} // Label slightly above the tip
-        fontSize={0.5}
-        color={color}
-        anchorX="center"
-        anchorY="bottom"
-        billboard
-      >
-        {`${name} (${x}, ${y}, ${z})`}
-      </Text>
+      <Billboard>
+        <Text
+          position={[x, y + 0.5, z]} // Label slightly above the tip
+          fontSize={0.5}
+          color={color}
+          anchorX="center"
+          anchorY="bottom"
+        >
+          {`${name} (${x}, ${y}, ${z})`}
+        </Text>
+      </Billboard>
     </group>
   );
 }
